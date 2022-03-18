@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="icons">
+    <file alias="open">icons8-folder-64.png</file>
+    <file alias="save">icons8-save-64.png</file>
+  </qresource>
+</RCC>

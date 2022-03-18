@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1298</width>
+    <height>888</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="3,9">
+    <property name="spacing">
+     <number>6</number>
+    </property>
+    <property name="leftMargin">
+     <number>6</number>
+    </property>
+    <property name="topMargin">
+     <number>6</number>
+    </property>
+    <property name="rightMargin">
+     <number>6</number>
+    </property>
+    <property name="bottomMargin">
+     <number>6</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="maximumSize">
+         <size>
+          <width>320</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 170, 127);
+color: &quot;#fff&quot;;
+border: none;
+padding: 10px 20px;
+font-size: 14px;
+font-weigth: &quot;bold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Начать эксперемент</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="maximumSize">
+         <size>
+          <width>320</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Общий график</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QCheckBox" name="checkBox_2">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Мгнитометр (Глаз)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBox">
+               <property name="text">
+                <string>Инверсия</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox">
+             <item>
+              <property name="text">
+               <string>Ось X</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Ось Y</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Ось Z</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>Маcштаб по Y:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
+               <property name="minimum">
+                <double>-9999999.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>9999999.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Смещение по Y:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox">
+               <property name="minimum">
+                <double>-9999999.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>9999999.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="line">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QCheckBox" name="checkBox_3">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Мгнитометр (Веко)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBox_4">
+               <property name="text">
+                <string>Инверсия</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_2">
+             <item>
+              <property name="text">
+               <string>Ось X</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Ось Y</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Ось Z</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>Маcштаб по Y:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_3">
+               <property name="minimum">
+                <double>-9999999.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>9999999.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>Смещение по Y:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_4">
+               <property name="minimum">
+                <double>-9999999.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>9999999.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="line_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <widget class="QCheckBox" name="checkBox_5">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Гироскоп</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_7">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBox_6">
+               <property name="text">
+                <string>Инверсия</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_3">
+             <item>
+              <property name="text">
+               <string>Ось X</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Ось Y</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Ось Z</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>Маcштаб по Y:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_8">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_5">
+               <property name="minimum">
+                <double>-9999999.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>9999999.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>Смещение по Y:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_9">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_6">
+               <property name="minimum">
+                <double>-9999999.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>9999999.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="line_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <item>
+              <widget class="QCheckBox" name="checkBox_7">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Акселерометр</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_10">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBox_8">
+               <property name="text">
+                <string>Инверсия</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_4">
+             <item>
+              <property name="text">
+               <string>Ось X</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Ось Y</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Ось Z</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_12">
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="text">
+                <string>Маcштаб по Y:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_11">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_7">
+               <property name="minimum">
+                <double>-9999999.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>9999999.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_13">
+             <item>
+              <widget class="QLabel" name="label_8">
+               <property name="text">
+                <string>Смещение по Y:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_12">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_8">
+               <property name="minimum">
+                <double>-9999999.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>9999999.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="line_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_14">
+             <item>
+              <widget class="QCheckBox" name="checkBox_9">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Окулограф</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_13">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBox_10">
+               <property name="text">
+                <string>Инверсия</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_5">
+             <item>
+              <property name="text">
+               <string>Левый глаз</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Правый глаз</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Оба глаза</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_15">
+             <item>
+              <widget class="QLabel" name="label_9">
+               <property name="text">
+                <string>Маcштаб X по Y:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_14">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_9">
+               <property name="minimum">
+                <double>-9999999.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>9999999.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_16">
+             <item>
+              <widget class="QLabel" name="label_10">
+               <property name="text">
+                <string>Маcштаб Y по Y:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_15">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_10">
+               <property name="minimum">
+                <double>-9999999.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>9999999.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="line_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_17">
+           <item>
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>Смещение ГВС по X: </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_16">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QDoubleSpinBox" name="doubleSpinBox_11">
+             <property name="minimum">
+              <double>-9999999.000000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>9999999.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_18">
+           <item>
+            <widget class="QLabel" name="label_12">
+             <property name="text">
+              <string>Смещение окулографа по X:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_17">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QDoubleSpinBox" name="doubleSpinBox_12">
+             <property name="minimum">
+              <double>-9999999.000000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>9999999.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>Окулограф</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_19">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="GraphicsLayoutWidget" name="widget" native="true"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>ГВС</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_20">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="GraphicsLayoutWidget" name="widget_2" native="true"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>Общий график</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_21">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_9">
+            <item>
+             <widget class="GraphicsLayoutWidget" name="widget_3" native="true"/>
+            </item>
+            <item>
+             <widget class="GraphicsLayoutWidget" name="widget_4" native="true">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>200</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1298</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="action_2"/>
+    <addaction name="separator"/>
+    <addaction name="action_3"/>
+    <addaction name="action_4"/>
+    <addaction name="action_5"/>
+    <addaction name="separator"/>
+    <addaction name="action_8"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/open</normaloff>:/icons/open</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть эксперимент</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/save</normaloff>:/icons/save</iconset>
+   </property>
+   <property name="text">
+    <string>Сохранить эксперимент</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/open</normaloff>:/icons/open</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть дамп ГВС (Глаз)</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/open</normaloff>:/icons/open</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть дамп ГВС (Веко)</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/open</normaloff>:/icons/open</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть дамп окулографа</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GraphicsLayoutWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">pyqtgraph</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
